@@ -8,7 +8,6 @@
   }
 }
 
-
 .header-bg {
   width: 100vw;
   background-image: url("../images/cover.jpg");
@@ -42,13 +41,13 @@
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   margin: 240px 15px 10px 15px;
 
-    @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     font-size: $font-size-super;
     margin: 384px 39px 20px 39px;
     line-height: 106px;
   }
 
-  @media all and (min-width:1280px) {
+  @media all and (min-width: 1280px) {
     width: 730px;
     font-size: $font-size-super-xl;
     margin: 384px auto 0 auto;
@@ -85,7 +84,7 @@
   border-radius: 50%;
   background: $color-bg-lighter;
 
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     margin-top: 30px;
   }
 }
