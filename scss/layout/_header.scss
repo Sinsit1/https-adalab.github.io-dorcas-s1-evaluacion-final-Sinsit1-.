@@ -1,1 +1,53 @@
 
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header-bg {
+  width: auto;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  width: 44px;
+  height: 44px;
+  background-color: $color-secundary;
+  border: none;
+}
+
+.encabezado-principal {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 42px;
+  width: 290px;
+  height: 110px;
+  font-family: $font-family-primary;
+  font-weight: $bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  color: $color-text-light;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 240px 15px 10px 15px;
+}
+
+.parrafo-hero {
+  color: $color-text-light;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.circulo-hero {
+  display: flex;
+  justify-content: center;
+  margin: 45px auto 53px auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+}
