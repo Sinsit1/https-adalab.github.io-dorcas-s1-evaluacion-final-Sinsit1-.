@@ -35,6 +35,13 @@
   background-color: $color-bg-lighter;
   margin: 30px 229px 45px 15px;
   justify-content: center;
+  transition: background-color ease 0.3s;
+  transition: width ease 0.3;
+
+  &:hover {
+    background-color: #f7bf18;
+    width: 72px;
+  }
 }
 
 a.no-link-decoration {

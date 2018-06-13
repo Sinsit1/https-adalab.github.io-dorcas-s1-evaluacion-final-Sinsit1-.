@@ -47,4 +47,9 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  transition: background-color ease 0.3s;
+
+  &:hover {
+    background-color:#f7bf18;
+  }
 }
