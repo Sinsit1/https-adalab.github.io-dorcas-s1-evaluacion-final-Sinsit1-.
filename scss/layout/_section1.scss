@@ -1,0 +1,43 @@
+.section1 {
+  padding: 30px 15px 45px 15px;
+  display: flex;
+  flex-direction: column;
+
+  p.insomnia {
+    color: #8ccbea;
+    font-size: $font-size-m;
+    font-family: $font-family-secundary;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-family: $font-family-primary;
+    font-size: $font-size-xxl;
+    margin-top: 3px;
+  }
+
+  p.article {
+    color: $gray;
+    font-family: $font-family-secundary;
+    margin-top: 15px;
+  }
+
+  .boton-go {
+    display: flex;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 2px #f26002;
+    color: $color-primary;
+    font-size: $font-size-xl;
+    font-family: $font-family-secundary;
+    background-color: $color-bg-lighter;
+    margin: 30px 229px 45px 15px;
+    justify-content: center;
+  }
+
+  a.no-link-decoration {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}

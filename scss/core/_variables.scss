@@ -1,13 +1,14 @@
 // Colors
 
-$color-primary: #f26002 ; /*naranja*/
-$color-secundary: #0271bc ; /*blue*/
-$color-bg-light: #eff9ff ; /*lightblue*/
+$color-primary: #f26002;
+$color-secundary: #0271bc;
+$color-bg-lighter:#fff;
+$color-bg-light: #eff9ff; /*lightblue*/
 $color-bg-dark: #304268; /*darkblue*/
-$color-text-light:   #fff;
+$color-text-light: #fff;
+$gray         :   #4a4a4a;
 
 
-$gray         :   #2c3e50;
 $darkgray     :   #95a5a6;
 $dark         :   #2c3e50;
 $notice       :   #3498db;
@@ -24,8 +25,8 @@ $semibold: 500;
 $bold: 700;
 
 $font-size-su:          42px;
-$font-size-xxl:         28px;
-$font-size-xl:          21px;
+$font-size-xxl:         24px;
+$font-size-xl:          20px;
 $font-size-l:           17px;
 $font-size-m-plus:      15px;
 $font-size-m:           14px;
@@ -34,5 +35,5 @@ $font-size-s:           12px;
 $font-size-xs:          11px;
 $font-size-mi:          10px;
 
-$font-family-primary: 'RobotoSlab';
-$font-family-secundary: 'Roboto';
+$font-family-primary: 'Roboto Slab', serif;
+$font-family-secundary: 'Roboto', sans-serif;
