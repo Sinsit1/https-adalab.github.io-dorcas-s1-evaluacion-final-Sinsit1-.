@@ -1,0 +1,27 @@
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+.a {
+  @media all and (min-width: 768px) {
+    display: flex;
+    margin: 30 auto 45 auto;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: span 3;
+  }
+}
+
+.e {
+  @media all and (min-width: 768px) {
+    grid-column-start: span 3;
+  }
+}

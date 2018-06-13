@@ -1,37 +1,42 @@
 
 .section2 {
-  display: grid;
-  text-align: center;
+  display: flex;
 }
 
 .grid {
-  height: 624px;
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
   background-color: $color-bg-light;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  grid-gap: 0;
 }
 
 .a {
-  padding: 30px 15px 45px 15px;
-  margin-top: 0;
+  font-weight: $bold;
+  font-family: $font-family-primary;
+  font-size: $font-size-xxl;
+  margin: 30px 15px 45px 15px;
+}
+
+.b, .c, .d {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .titulo-purchase {
+  margin: 0 auto;
   font-size: $font-size-l;
   font-family: $font-family-primary;
   font-weight: bold;
   width: 184px;
-  height: 30px;
 }
 
 .texto-purchase {
   font-size: $font-size-l;
   font-family: $font-family-secundary;
   width: 180px;
-  height: 63px;
+  margin: 0 auto;
   margin-bottom: 45px;
 }
 
@@ -46,10 +51,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 60px;
   transition: background-color ease 0.3s;
 
   &:hover {
-    background-color:#f7bf18;
+    background-color: #f7bf18;
+  }
+
+  @media all and (min-width: 768px) {
+    margin-top: 15px;
   }
 }

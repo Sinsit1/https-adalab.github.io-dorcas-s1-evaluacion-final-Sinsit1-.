@@ -1,13 +1,16 @@
-@import '../core/variables';
-
 .header {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    height: 768px;
+  }
 }
 
+
 .header-bg {
-  width: auto;
+  width: 100vw;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
@@ -24,26 +27,52 @@
 }
 
 .encabezado-principal {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-size: 42px;
-  width: 290px;
-  height: 110px;
   font-family: $font-family-primary;
   font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.31;
+  line-height: 55px;
   letter-spacing: normal;
   color: $color-text-light;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   margin: 240px 15px 10px 15px;
+
+    @media all and (min-width:768px) {
+    font-size: $font-size-super;
+    margin: 384px 39px 20px 39px;
+    line-height: 106px;
+  }
+
+  @media all and (min-width:1280px) {
+    width: 730px;
+    font-size: $font-size-super-xl;
+    margin: 384px auto 0 auto;
+    line-height: 132px;
+  }
 }
 
 .parrafo-hero {
   color: $color-text-light;
   text-align: center;
   margin: 0 15px;
+  font-family: $font-family-secundary;
+  font-size: $font-size-m-plus;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-xxl;
+  }
+
+  @media all and (min-width: 1280px) {
+    margin-bottom: 30px;
+  }
 }
 
 .circulo {
@@ -54,10 +83,14 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: white;
+  background: $color-bg-lighter;
+
+  @media all and (min-width:768px){
+    margin-top: 30px;
+  }
 }
 
 .enlace-ancla {
   padding: 12px;
-  z-index:4;
+  z-index: 4;
 }

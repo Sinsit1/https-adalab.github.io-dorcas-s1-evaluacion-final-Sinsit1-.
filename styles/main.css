@@ -4,25 +4,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-}/*lightblue*//*darkblue*//* TYPOGRAPHY WEIGHT */* {
+}/* TYPOGRAPHY WEIGHT */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   line-height: 1.4;
-}/*lightblue*//*darkblue*//* TYPOGRAPHY WEIGHT */.header {
+}
+
+.header {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .header-bg {
-  width: auto;
+  width: 100vw;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
@@ -43,16 +43,22 @@ body {
 }
 
 .encabezado-principal {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-transform: uppercase;
   font-size: 42px;
-  width: 290px;
-  height: 110px;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.31;
+  line-height: 55px;
   letter-spacing: normal;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -63,6 +69,11 @@ body {
   color: #fff;
   text-align: center;
   margin: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
 }
 
 .circulo {
@@ -79,7 +90,7 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: white;
+  background: #fff;
 }
 
 .enlace-ancla {
@@ -88,7 +99,7 @@ body {
 }
 
 .section1 {
-  padding: 30px 15px 0 15px;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,22 +110,44 @@ body {
 }
 
 .insomnia {
+  height: 30px;
   color: #8ccbea;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+}
+
+.contenedor-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .encabezado {
-  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 290px;
+  font-weight: 700;
   font-family: "Roboto Slab", serif;
   font-size: 24px;
-  margin-top: 3px;
+  margin: 1px 0 15px 0;
 }
 
 .article {
+  height: 120px;
   color: #4a4a4a;
   font-family: "Roboto", sans-serif;
-  margin-top: 15px;
 }
 
 .boton-go {
@@ -141,7 +174,6 @@ body {
 
 .boton-go:hover {
   background-color: #f7bf18;
-  width: 72px;
 }
 
 a.no-link-decoration {
@@ -150,38 +182,51 @@ a.no-link-decoration {
 }
 
 .section2 {
-  display: grid;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .grid {
-  height: 624px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
   background-color: #eff9ff;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  grid-gap: 0;
 }
 
 .a {
-  padding: 30px 15px 45px 15px;
-  margin-top: 0;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  margin: 30px 15px 45px 15px;
+}
+
+.b,.c,.d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .titulo-purchase {
+  margin: 0 auto;
   font-size: 18px;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   width: 184px;
-  height: 30px;
 }
 
 .texto-purchase {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   width: 180px;
-  height: 63px;
+  margin: 0 auto;
   margin-bottom: 45px;
 }
 
@@ -202,6 +247,7 @@ a.no-link-decoration {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 60px;
   -webkit-transition: background-color ease 0.3s;
   transition: background-color ease 0.3s;
@@ -209,6 +255,16 @@ a.no-link-decoration {
 
 .boton-reasons:hover {
   background-color: #f7bf18;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer {
@@ -256,6 +312,120 @@ a.no-link-decoration {
 
 .love-components {
   margin-bottom: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    height: 768px;
+  }
+
+  .encabezado-principal {
+    font-size: 80px;
+    margin: 384px 39px 20px 39px;
+    line-height: 106px;
+  }
+
+  .parrafo-hero {
+    font-size: 24px;
+  }
+
+  .circulo {
+    margin-top: 30px;
+  }
+
+  .insomnia {
+    margin-left: 39px;
+    width: 216px;
+  }
+
+  .contenedor-sec1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 730px;
+  }
+
+  .encabezado {
+    margin-left: 39px;
+    width: 690px;
+    height: 45px;
+  }
+
+  .encabezado {
+    font-size: 32px;
+  }
+
+  .article {
+    margin-left: 39px;
+    width: 690px;
+    height: 60px;
+    line-height: 30px;
+  }
+
+  .boton-go {
+    width: 91px;
+    margin-left: 39px;
+    margin-bottom: 60px;
+  }
+
+  .boton-go {
+    width: 160px;
+  }
+
+  .boton-reasons {
+    margin-top: 15px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30 auto 45 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-start: span 3;
+  }
+
+  .e {
+    grid-column-start: span 3;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .encabezado-principal {
+    width: 730px;
+    font-size: 100px;
+    margin: 384px auto 0 auto;
+    line-height: 132px;
+  }
+
+  .parrafo-hero {
+    margin-bottom: 30px;
+  }
+
+  .insomnia {
+    font-size: 16px;
+  }
+
+  .article {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
