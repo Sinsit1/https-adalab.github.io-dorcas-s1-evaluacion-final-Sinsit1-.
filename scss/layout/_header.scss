@@ -43,7 +43,7 @@
   margin: 0 15px;
 }
 
-.circulo-hero {
+.circulo {
   display: flex;
   justify-content: center;
   margin: 45px auto 53px auto;
@@ -51,4 +51,5 @@
   height: 45px;
   border-radius: 50%;
   background: white;
+  z-index: 4;
 }

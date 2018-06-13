@@ -1,0 +1,50 @@
+
+.section2 {
+  display: grid;
+  text-align: center;
+}
+
+.grid {
+  height: 624px;
+  background-color: $color-bg-light;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 0;
+}
+
+.a {
+  padding: 30px 15px 45px 15px;
+  margin-top: 0;
+}
+
+.titulo-purchase {
+  font-size: $font-size-l;
+  font-family: $font-family-primary;
+  font-weight: bold;
+  width: 184px;
+  height: 30px;
+}
+
+.texto-purchase {
+  font-size: $font-size-l;
+  font-family: $font-family-secundary;
+  width: 180px;
+  height: 63px;
+  margin-bottom: 45px;
+}
+
+.boton-reasons {
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: $color-primary;
+  font-size: $font-size-xl;
+  color: $color-text-light;
+  font-family: $font-family-secundary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
