@@ -14,6 +14,9 @@
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  position: fixed;
   width: 44px;
   height: 44px;
   background-color: $color-secundary;
@@ -46,10 +49,15 @@
 .circulo {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 45px auto 53px auto;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background: white;
-  z-index: 4;
+}
+
+.enlace-ancla {
+  padding: 12px;
+  z-index:4;
 }

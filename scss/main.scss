@@ -4,29 +4,4 @@
 @import 'layout/header';
 @import 'layout/section1';
 @import 'layout/section2';
-
-.footer {
-  background-color: $color-bg-dark;
-  height: 128px;
-  color: $color-text-light;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: $font-family-secundary;
-  font-size: $font-size-m;
-  position: relative;
-}
-
-.circulo-footer {
-  display: flex;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: white;
-  z-index: 4;
-  margin: 0;
-  position: absolute;
-  top:-25px;
-}
+@import 'layout/footer';

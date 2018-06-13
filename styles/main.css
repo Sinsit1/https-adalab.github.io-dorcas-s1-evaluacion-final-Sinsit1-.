@@ -29,6 +29,13 @@ body {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
   width: 44px;
   height: 44px;
   background-color: #0271bc;
@@ -65,11 +72,18 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 45px auto 53px auto;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background: white;
+}
+
+.enlace-ancla {
+  padding: 12px;
   z-index: 4;
 }
 
@@ -219,6 +233,14 @@ a.no-link-decoration {
   margin: 0;
   position: absolute;
   top: -25px;
+}
+
+.copiright {
+  margin: 38px auto 0 auto;
+}
+
+.love-components {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
