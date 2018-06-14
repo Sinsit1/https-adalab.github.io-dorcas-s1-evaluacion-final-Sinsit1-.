@@ -79,6 +79,16 @@ body {
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .btn {
@@ -115,7 +125,7 @@ body {
   line-height: 55px;
   color: #fff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  margin: 240px auto 10px auto;
+  margin: 0 auto 10px auto;
 }
 
 .parrafo-hero {
@@ -230,6 +240,7 @@ body {
 
 .boton-go:hover {
   background-color: #f7bf18;
+  border: none;
 }
 
 a.no-link-decoration {
@@ -384,7 +395,7 @@ a.no-link-decoration {
 }/* preguntar donde van las variables de tipografia *//* hacer bien la paleta de colores *//* hacer mediaqueris del footer *//* Hacer medias de 1200 para grid */@media all and (min-width: 768px) {
   .encabezado-principal {
     font-size: 80px;
-    margin: 384px auto 20px auto;
+    margin: 0 auto 20px auto;
     line-height: 106px;
     width: 690px;
   }
@@ -500,7 +511,7 @@ a.no-link-decoration {
   .encabezado-principal {
     width: 730px;
     font-size: 100px;
-    margin: 200px auto 0 auto;
+    margin: 0 auto 0 auto;
     line-height: 132px;
   }
 
