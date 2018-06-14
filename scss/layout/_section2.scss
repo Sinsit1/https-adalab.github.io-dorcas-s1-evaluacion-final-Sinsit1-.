@@ -31,6 +31,10 @@
   font-family: $font-family-primary;
   font-weight: bold;
   width: 184px;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-l;
+  }
 }
 
 .texto-purchase {
@@ -39,6 +43,10 @@
   width: 180px;
   margin: 0 auto;
   margin-bottom: 45px;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-l;
+  }
 }
 
 .boton-reasons {

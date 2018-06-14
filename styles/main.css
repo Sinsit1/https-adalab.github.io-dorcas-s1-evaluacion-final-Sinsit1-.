@@ -442,6 +442,14 @@ a.no-link-decoration {
     width: 160px;
   }
 
+  .titulo-purchase {
+    font-size: 18px;
+  }
+
+  .texto-purchase {
+    font-size: 18px;
+  }
+
   .boton-reasons {
     margin-top: 15px;
   }
@@ -492,7 +500,7 @@ a.no-link-decoration {
   .encabezado-principal {
     width: 730px;
     font-size: 100px;
-    margin: 384px auto 0 auto;
+    margin: 200px auto 0 auto;
     line-height: 132px;
   }
 
