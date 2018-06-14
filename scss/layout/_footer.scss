@@ -1,12 +1,11 @@
 
 .footer {
+  @include flex-align;
+
+  flex-direction: column;
   background-color: $color-bg-dark;
   height: 128px;
   color: $color-text-light;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: $font-family-secundary;
   font-size: $font-size-m;
   position: relative;
@@ -23,6 +22,24 @@
   margin: 0;
   position: absolute;
   top: -25px;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}
+
+  &:after {
+    top: -100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background: #3a9999;
+    border-radius: 5px;
+    content: ‘Flipped’;
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+  }
 }
 
 .copiright {
@@ -31,4 +48,8 @@
 
 .love-components {
   margin-bottom: 30px;
+}
+
+.primary {
+color: $color-primary;
 }

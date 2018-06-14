@@ -2,10 +2,6 @@
   height: 100vh;
   display: flex;
   text-align: center;
-
-  @media all and (min-width: 768px) {
-    height: 768px;
-  }
 }
 
 .header-bg {
@@ -26,25 +22,23 @@
 }
 
 .encabezado-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-align;
+  @include normalize;
+
   text-transform: uppercase;
   font-size: 42px;
   font-family: $font-family-primary;
   font-weight: $bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 55px;
-  letter-spacing: normal;
   color: $color-text-light;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  margin: 240px 15px 10px 15px;
+  margin: 240px auto 10px auto;
 
   @media all and (min-width: 768px) {
     font-size: $font-size-super;
-    margin: 384px 39px 20px 39px;
+    margin: 384px auto 20px auto;
     line-height: 106px;
+    width: 690px;
   }
 
   @media all and (min-width: 1280px) {
@@ -52,18 +46,18 @@
     font-size: $font-size-super-xl;
     margin: 384px auto 0 auto;
     line-height: 132px;
+    
   }
 }
 
 .parrafo-hero {
+  @include normalize;
+
   color: $color-text-light;
   text-align: center;
   margin: 0 15px;
   font-family: $font-family-secundary;
   font-size: $font-size-m-plus;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
 
   @media all and (min-width: 768px) {
     font-size: $font-size-xxl;
@@ -75,9 +69,7 @@
 }
 
 .circulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-align;
   margin: 45px auto 53px auto;
   width: 45px;
   height: 45px;

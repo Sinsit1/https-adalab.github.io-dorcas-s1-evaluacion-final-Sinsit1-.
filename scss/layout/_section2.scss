@@ -42,6 +42,8 @@
 }
 
 .boton-reasons {
+  @include flex-align;
+
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -49,9 +51,6 @@
   font-size: $font-size-xl;
   color: $color-text-light;
   font-family: $font-family-secundary;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   margin-bottom: 60px;
   transition: background-color ease 0.3s;
