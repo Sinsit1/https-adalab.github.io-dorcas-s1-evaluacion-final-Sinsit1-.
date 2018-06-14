@@ -24,22 +24,16 @@
   top: -25px;
   transform-style: preserve-3d;
 
-  &:hover {
-    transform-origin: center bottom;
-    transform: rotateX(-90deg) translateY(100%);
 }
 
-  &:after {
-    top: -100%;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    background: #3a9999;
-    border-radius: 5px;
-    content: ‘Flipped’;
-    transform-origin: left bottom;
-    transform: rotateX(90deg);
-  }
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(1,1,1);}
+  100% {transform: translate3d(0,70%,0) scale3d(1,1,1);}
+}
+.jump:hover{
+  transform-origin: 50% 20%;
+  animation: jump .5s linear alternate infinite;
 }
 
 .copiright {
