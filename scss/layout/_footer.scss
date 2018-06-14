@@ -23,7 +23,6 @@
   position: absolute;
   top: -25px;
   transform-style: preserve-3d;
-
 }
 
 @keyframes jump {
@@ -31,9 +30,10 @@
   40%  {transform: translate3d(0,30%,0) scale3d(1,1,1);}
   100% {transform: translate3d(0,70%,0) scale3d(1,1,1);}
 }
-.jump:hover{
+
+.jump:hover {
   transform-origin: 50% 20%;
-  animation: jump .5s linear alternate infinite;
+  animation: jump 0.5s linear alternate infinite;
 }
 
 .copiright {
@@ -45,5 +45,5 @@
 }
 
 .primary {
-color: $color-primary;
+  color: $color-primary;
 }

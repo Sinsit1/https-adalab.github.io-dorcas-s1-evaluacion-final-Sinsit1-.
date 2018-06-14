@@ -33,7 +33,7 @@
   width: 184px;
 
   @media all and (min-width: 768px) {
-    font-size: $font-size-l;
+    font-size: $font-size-xl;
   }
 }
 
@@ -45,13 +45,14 @@
   margin-bottom: 45px;
 
   @media all and (min-width: 768px) {
-    font-size: $font-size-l;
+    font-size: $font-size-xl;
   }
 }
 
 .boton-reasons {
   @include flex-align;
 
+  text-decoration: none;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -65,7 +66,6 @@
 
   &:hover {
     background-color: #f7bf18;
-  ;
   }
 
   @media all and (min-width: 768px) {

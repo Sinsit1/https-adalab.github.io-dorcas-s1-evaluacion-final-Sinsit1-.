@@ -307,6 +307,7 @@ a.no-link-decoration {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: none;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -378,8 +379,8 @@ a.no-link-decoration {
 .jump:hover {
   -webkit-transform-origin: 50% 20%;
   transform-origin: 50% 20%;
-  -webkit-animation: jump .5s linear alternate infinite;
-  animation: jump .5s linear alternate infinite;
+  -webkit-animation: jump 0.5s linear alternate infinite;
+  animation: jump 0.5s linear alternate infinite;
 }
 
 .copiright {
@@ -454,11 +455,11 @@ a.no-link-decoration {
   }
 
   .titulo-purchase {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .texto-purchase {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .boton-reasons {
